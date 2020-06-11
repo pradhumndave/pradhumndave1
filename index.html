@@ -24,8 +24,12 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
 
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+ 
 </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -669,7 +673,7 @@
 
 
 
-                <form class="p-5 bg-white">
+                <div class="p-5 bg-white">
 
                     <h2 class="h4 text-black mb-5">Contact Form</h2>
 
@@ -708,12 +712,10 @@
                     </div>
 
                     <div class="row form-group">
-                        <div class="col-md-12">
-                            <a href="index.html"><button id="button" onclick="alert('Thankyou for submitting the form\n Will contact you soon'); return true;" class="btn btn-primary btn-md text-white">Submit Query</button></a>
+                        <div class="col-md-12"><button id="button" class="btn btn-primary btn-md text-white">Submit Query</button>
                         </div>
                     </div>
-                </form>
-
+                  </div>
                 
             </div>
           
@@ -785,6 +787,15 @@
   </footer>
 
   </div> <!-- .site-wrap -->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+  <script src="./js/firebase-config.js"></script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
